@@ -1,0 +1,1 @@
+export { TicTacToeComponent } from './game-view';
