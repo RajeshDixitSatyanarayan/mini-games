@@ -11,11 +11,15 @@ const possibilities = [
 
 export const processInput = (input: Array<string>): Array<number> => {
     let returnPositions: Array<number> = [];
-    const isWon: boolean = possibilities.some( (possibility: Array<number>) =>  {
-        if (input[ possibility[ 0 ] ] === input[ possibility[ 1 ] ] && input[ possibility[ 1 ] ] === input[ possibility[ 2 ] ]) {
+    possibilities.some( (possibility: Array<number>) =>  {
+        if (input[ possibility[ 0 ] ] !== '' &&
+            input[ possibility[ 0 ] ] === input[ possibility[ 1 ] ] &&
+            input[ possibility[ 1 ] ] === input[ possibility[ 2 ] ]
+        ) {
             returnPositions = [ ...possibility ];
             return true;
         }
-    },);
+        return false;
+    });
     return returnPositions;
 }

@@ -2,10 +2,6 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-}
-
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -22,18 +18,24 @@
 }
 
 .choice-tile {
-  height: 50px;
-  width: 50px;
+  height: 100px;
+  width: 100px;
   background: #eee;
   color: #333;
-  font-size: 24px;
+  font-size: 1.5em;
   margin-right: 3px;
   margin-bottom: 3px;
   display: inline-block;
-  line-height: 50px;
+  line-height: 100px;
   vertical-align: middle;
   text-align: center;
 }
 .tic-tac-toe-container {
-  width: 200px;
+  width: 350px;
+}
+
+.game-status-bar {
+  text-align: center;
+  border-bottom: 2px red solid;
+  margin-bottom: 10px;;  
 }
